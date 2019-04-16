@@ -7,7 +7,7 @@ LABEL maintaner=@eugenek113
 WORKDIR '/usr/app'
 
 # mkdir a place to house notebooks
-RUN mkdir -p usr/app/notebooks
+RUN mkdir -p notebooks
 
 # install tensorflow 2.0 alpha
 RUN pip install tensorflow==2.0.0-alpha0 
@@ -15,5 +15,4 @@ RUN pip install tensorflow==2.0.0-alpha0
 # copy contents of app to usr/app
 COPY notebooks /usr/app/notebooks
 
-# default start up command for jupyter notebook
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]
+CMD ["/bin/bash"]
