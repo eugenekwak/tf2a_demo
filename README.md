@@ -9,5 +9,5 @@ In order to fire up the container with a Jupyter notebook, run the following...
 
 Then, you can open Jupyter in your browser using the following...
 
-`http://0.0.0.0:8888/?token=<insert token provided here>`
+`https://0.0.0.0:8888/?token=<insert token provided here>`
 
